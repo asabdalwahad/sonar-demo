@@ -8,6 +8,7 @@ import java.util.Optional;
 @SpringBootApplication
 public class SonarDemoApplication {
     private static Integer x;
+    private Integer y;
 
     public static void main(String[] args) {
         int z = Optional.of(x).get();
@@ -15,6 +16,9 @@ public class SonarDemoApplication {
         SpringApplication.run(SonarDemoApplication.class, args);
     }
 
+    public int doOp(){
+        return Optional.of(y).get().compareTo(4);
+    }
     public boolean sum() {
         if (x > 0) {
             return true;
