@@ -16,13 +16,24 @@ public class SonarDemoApplication {
         SpringApplication.run(SonarDemoApplication.class, args);
     }
 
-    public int doOp(){
+    public int doOp() {
         return Optional.of(y).get().compareTo(4);
     }
 
-    public int doOp1(){
+    public int doOp1() {
+        if (Optional.of(y).get().compareTo(4) > 0) {
+            return Optional.of(y).get().compareTo(4);
+        }
         return Optional.of(y).get().compareTo(4);
     }
+
+    public int doOp2() {
+        if (Optional.of(y).get().compareTo(4) > 0) {
+            return Optional.of(y).get().compareTo(4);
+        }
+        return Optional.of(y).get().compareTo(4);
+    }
+
     public boolean sum() {
         if (x > 0) {
             return true;
