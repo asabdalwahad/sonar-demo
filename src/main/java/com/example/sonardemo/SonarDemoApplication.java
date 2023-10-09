@@ -34,6 +34,20 @@ public class SonarDemoApplication {
         return Optional.of(y).get().compareTo(4);
     }
 
+    public int doOp3() {
+        if (Optional.of(y).get().compareTo(4) > 0) {
+            return Optional.of(y).get().compareTo(4);
+        }
+        return Optional.of(y).get().compareTo(4);
+    }
+
+    public int doOp4() {
+        if (Optional.of(y).get().compareTo(4) > 0) {
+            return Optional.of(y).get().compareTo(4);
+        }
+        return Optional.of(y).get().compareTo(4);
+    }
+
     public boolean sum() {
         if (x > 0) {
             return true;
